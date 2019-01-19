@@ -1,0 +1,48 @@
+// Modules and Variables
+@import "partials/base";
+
+$white : #fff;
+.search-text {
+  margin-top: 50px;
+  background-color: #7dabdb;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .input-search {
+    height: 45px;
+    width: 400px;
+    padding-left: 20px;
+    color: #333;
+  }
+  .btn-search {
+    background-color: #7dabdb;
+    border: 1px solid #FFF;
+    color: #FFF;
+    padding: 11px 22px;
+    &:hover {
+      background-color: #FFF;
+      color: #7dabdb;
+    }
+  }
+}
+.cl-wt{
+  color: $white
+}
+.copyright {
+  background-color: #f0f0f0;
+  p {
+    margin: 15px 0px;
+  }
+}
+
+footer {
+  background-color: #222222;
+  padding: 60px 0px;
+  .menu li a {
+    color: #b1aca1;
+    padding: 10px;
+    text-decoration: none;
+    &:hover {
+      color: #7dabdb;
+    }
+  }
+}
