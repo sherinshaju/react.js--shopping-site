@@ -94,11 +94,13 @@ class App extends Component {
            value : this.state.props
          })
        }
-
-       delete(posts){
-        const data = this.state.posts.filter(key => key.id !== posts.id)
-        this.setState({posts})
-      }
+       deleteitem = (key)=>{
+         console.log(key);
+         const filteriteam = this.state.posts.filter(posts =>{
+           return key !== key
+         })
+         
+       }
 
   render() {
     return(
@@ -111,7 +113,7 @@ class App extends Component {
               <Sidebar />
             </div>
             <div className="col-md-9">
-              <Product delete={this.delete} count={this.state.counter} value={this.handleClick} click={this.getvalue} posts={this.state.posts} />
+              <Product deleteitem={this.deleteitem} count={this.state.counter} value={this.handleClick} click={this.getvalue} posts={this.state.posts} />
             </div>
           </div>
         </div>
@@ -119,6 +121,4 @@ class App extends Component {
       </div>
     )};
 }
-
-
 export default App;
